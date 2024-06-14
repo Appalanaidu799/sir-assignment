@@ -1,14 +1,14 @@
 pipeline{
 	agent any
 	tools{
-		maven "test-maven"
+		maven "maven-3.9.7"
 	}
       stages{
            stage('Checkout'){
 	    
                steps{
 		 echo 'cloning..'
-                 git 'https://github.com/akshu20791/DevOpsClassCodes.git'
+                 git 'https://github.com/Appalanaidu799/sir-assignment.git'
               }
           }
           stage('Compile'){
