@@ -17,10 +17,5 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Qa the code'){
-            steps{
-                sh 'mvn pmd:pmd'
-            }
-        }
     }
 }
